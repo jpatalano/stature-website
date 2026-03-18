@@ -29,6 +29,7 @@
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reveal.css">
   <script>
@@ -116,15 +117,14 @@
         >
           <h2 style="font-size:var(--text-xl); font-weight:800; color:var(--color-text); margin-bottom:var(--space-8);">Start the conversation</h2>
 
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-5);">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="Jane Smith" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Work Email</label>
-              <input type="email" id="email" name="email" placeholder="jane@company.com" required>
-            </div>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Work Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required>
           </div>
 
           <div class="form-group">
@@ -176,6 +176,8 @@
               <option>Just exploring for now</option>
             </select>
           </div>
+
+          <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001" style="margin-bottom:var(--space-5);"></div>
 
           <button type="submit" class="btn btn--primary btn--lg" style="width:100%; justify-content:center; margin-top:var(--space-4);">
             Send Message
