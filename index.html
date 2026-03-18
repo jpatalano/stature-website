@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stature Software — Enterprise Software Expertise, AI Speed</title>
+  <meta name="description" content="30 years of enterprise software expertise. We know what it takes to build secure, scalable, production-ready systems — and we direct today's best AI coding tools to build them fast.">
+  <meta property="og:title" content="Stature Software — Enterprise Software Expertise, AI Speed">
+  <meta property="og:description" content="AI can write code fast. We make sure it writes the right code. 30 years of enterprise software knowledge directing Claude Code, Cursor, and GitHub Copilot to build secure, scalable solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://staturesoftware.com">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reveal.css">
+
+  <script>
+    // Prevent FOUC — set theme before paint
+    (function(){
+      var t =
+        (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     NAV
+════════════════════════════════════════ -->
+<header class="nav" role="banner">
+  <div class="container">
+    <div class="nav__inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="nav__logo" aria-label="Stature Software home">
+          <svg width="172" height="40" viewBox="0 0 172 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Stature Software">
+  <defs>
+    <style>
+      @keyframes star-blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .star-blink { animation: star-blink 1.1s step-end infinite; }
+    </style>
+  </defs>
+  <rect x="0" y="2" width="36" height="36" rx="8" fill="var(--color-primary)"/>
+  <path d="M8 16 L13 20 L8 24" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="16" y="27" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="white">s</text>
+  <path class="star-blink" d="M29 17 L30 20 L33 20.6 L30 21.2 L29 24.2 L28 21.2 L25 20.6 L28 20 Z" fill="white"/>
+  <text x="46" y="25" font-family="Cabinet Grotesk, Helvetica Neue, sans-serif" font-size="18" font-weight="900" letter-spacing="2" fill="var(--color-text)">STATURE</text>
+  <text x="47" y="35" font-family="Cabinet Grotesk, Helvetica Neue, sans-serif" font-size="8" font-weight="500" letter-spacing="2.8" fill="var(--color-text-muted)">SOFTWARE</text>
+</svg>
+      </a>
+
+      <!-- Desktop links -->
+      <nav aria-label="Main navigation">
+        <ul class="nav__links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+          <!-- filled by JS -->
+        </button>
+        <a href="contact.html" class="nav__cta">Start a Conversation</a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn--primary" style="width:fit-content">Start a Conversation</a>
+  </nav>
+</header>
+
+
+<!-- ═══════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="hero__grid">
+
+      <!-- Left: copy -->
+      <div>
+        <div class="hero__eyebrow" data-reveal>30 Years of Enterprise Software Expertise</div>
+        <h1 class="hero__heading" data-reveal data-delay="1">
+          We build<br>
+          <em>enterprise solutions.</em>
+        </h1>
+        <p class="hero__body" data-reveal data-delay="2">
+          AI coding tools are fast. But fast in the wrong direction is expensive. We bring 30 years of enterprise software knowledge — architecture, security, scalability, compliance — and direct today's best AI tools to build solutions that are actually production-ready.
+        </p>
+        <div class="hero__actions" data-reveal data-delay="3">
+          <a href="case-studies.html" class="btn btn--primary btn--lg">See How It Works</a>
+          <a href="contact.html" class="btn btn--outline btn--lg">Talk to Us</a>
+        </div>
+        <p class="hero__trust" data-reveal data-delay="4">Enterprise-grade · Trusted since 1996 · .NET, iOS, Android, Cloud</p>
+      </div>
+
+      <!-- Right: code window visual -->
+      <div class="hero__visual" data-reveal data-delay="2">
+        <!-- Floating pills -->
+        <div class="hero__pill hero__pill--1">
+          <span class="hero__pill-dot hero__pill-dot--green"></span>
+          Claude Code Active
+        </div>
+        <div class="hero__pill hero__pill--2">
+          <span class="hero__pill-dot"></span>
+          Enterprise-Ready
+        </div>
+        <div class="hero__pill hero__pill--3">
+          <span class="hero__pill-dot hero__pill-dot--amber"></span>
+          Security Verified
+        </div>
+
+        <div class="hero__code-window">
+          <div class="code-window__bar">
+            <span class="code-dot code-dot--red"></span>
+            <span class="code-dot code-dot--amber"></span>
+            <span class="code-dot code-dot--green"></span>
+            <span class="code-window__filename">PaymentService.cs — enterprise build</span>
+          </div>
+          <div class="code-window__body">
+            <div class="code-line"><span class="code-num">1</span><span class="code-content tok-comment">// ✦ Stature-directed · security-reviewed · audit-ready</span></div>
+            <div class="code-line"><span class="code-num">2</span><span class="code-content"><span class="tok-keyword">using</span> <span class="tok-var">Stature.Security.Audit</span>;</span></div>
+            <div class="code-line"><span class="code-num">3</span><span class="code-content"></span></div>
+            <div class="code-line"><span class="code-num">4</span><span class="code-content"><span class="tok-keyword">public class</span> <span class="tok-fn">PaymentService</span></span></div>
+            <div class="code-line"><span class="code-num">5</span><span class="code-content">{</span></div>
+            <div class="code-line"><span class="code-num">6</span><span class="code-content">&nbsp;&nbsp;<span class="tok-comment">// PCI-DSS compliant · zero plaintext secrets</span></span></div>
+            <div class="code-line"><span class="code-num">7</span><span class="code-content">&nbsp;&nbsp;<span class="tok-dim">///</span> <span class="tok-string">&lt;summary&gt;Process payment with audit trail&lt;/summary&gt;</span></span></div>
+            <div class="code-line"><span class="code-num">8</span><span class="code-content">&nbsp;&nbsp;<span class="tok-keyword">public async</span> <span class="tok-fn">Task</span>&lt;<span class="tok-fn">PaymentResult</span>&gt;</span></div>
+            <div class="code-line"><span class="code-num">9</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;<span class="tok-fn">ProcessAsync</span>(<span class="tok-fn">PaymentRequest</span> <span class="tok-var">req</span>)</span></div>
+            <div class="code-line"><span class="code-num">10</span><span class="code-content">&nbsp;&nbsp;{</span></div>
+            <div class="code-line"><span class="code-num">11</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;<span class="tok-keyword">await</span> _audit.<span class="tok-fn">LogAsync</span>(<span class="tok-var">req</span>);</span></div>
+            <div class="code-line"><span class="code-num">12</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;<span class="tok-keyword">return await</span> _gateway</span></div>
+            <div class="code-line"><span class="code-num">13</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<span class="tok-fn">ChargeAsync</span>(<span class="tok-var">req</span>)</span></div>
+            <div class="code-line"><span class="code-num">14</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<span class="tok-fn">WithRetry</span>(3);</span></div>
+            <div class="code-line"><span class="code-num">15</span><span class="code-content">&nbsp;&nbsp;}</span></div>
+            <div class="code-line"><span class="code-num">16</span><span class="code-content">}</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     TECH LOGOS STRIP
+════════════════════════════════════════ -->
+<div class="logos-strip">
+  <div class="container">
+    <p class="logos-strip__label">Powered by today's leading AI coding tools</p>
+    <div class="logos-strip__row">
+      <span class="logos-strip__tech">Claude Code</span>
+      <span class="logos-strip__tech">Cursor</span>
+      <span class="logos-strip__tech">GitHub Copilot</span>
+      <span class="logos-strip__tech">Gemini Code Assist</span>
+      <span class="logos-strip__tech">Windsurf</span>
+      <span class="logos-strip__tech">Amazon Q</span>
+      <span class="logos-strip__tech">Codeium</span>
+      <span class="logos-strip__tech">OpenAI Codex</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     WHAT WE DO — 3 STEPS
+════════════════════════════════════════ -->
+<section class="section section--surface" id="process">
+  <div class="container container--default">
+    <div class="text-center gap-section" data-reveal>
+      <p class="section__eyebrow">The Stature Method</p>
+      <h2 class="section__title">Three phases.<br>Enterprise software, AI speed.</h2>
+      <p class="section__subtitle">Enterprise software is about far more than writing code. We bring the architecture, security, and systems thinking — then direct AI tools to execute at a pace that would take a traditional team months.</p>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step" data-reveal data-delay="1">
+        <div class="process-step__number">01</div>
+        <h3 class="process-step__title">Architect</h3>
+        <p class="process-step__body">Before a single line of code is written, we design the right solution. Security model, data architecture, scalability plan, integration strategy. This is where enterprise experience matters most — and where AI tools alone fall short.</p>
+      </div>
+      <div class="process-step" data-reveal data-delay="2">
+        <div class="process-step__number">02</div>
+        <h3 class="process-step__title">Build</h3>
+        <p class="process-step__body">We direct Claude Code, Cursor, and Copilot against a well-defined architecture. AI handles the volume of implementation. We ensure every output meets enterprise standards: secure, tested, documented, and maintainable.</p>
+      </div>
+      <div class="process-step" data-reveal data-delay="3">
+        <div class="process-step__number">03</div>
+        <h3 class="process-step__title">Ship</h3>
+        <p class="process-step__body">Production-ready. Not "works on my machine" — actually production-ready. CI/CD pipelines, monitoring, rollback plans, security review. Your team inherits software built to enterprise standards, delivered at AI speed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     STATS
+════════════════════════════════════════ -->
+<section class="section section--accent" id="about-numbers">
+  <div class="container container--default">
+    <div class="stats-row">
+      <div data-reveal>
+        <div class="stat__number">30+</div>
+        <div class="stat__label">Years shipping<br>enterprise software</div>
+      </div>
+      <div data-reveal data-delay="1">
+        <div class="stat__number">10&times;</div>
+        <div class="stat__label">Faster delivery<br>vs. traditional builds</div>
+      </div>
+      <div data-reveal data-delay="2">
+        <div class="stat__number">100%</div>
+        <div class="stat__label">Enterprise-grade<br>every time</div>
+      </div>
+      <div data-reveal data-delay="3">
+        <div class="stat__number">0</div>
+        <div class="stat__label">Security shortcuts<br>ever taken</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+════════════════════════════════════════ -->
+<section class="section" id="services">
+  <div class="container container--default">
+    <div class="text-center gap-section" data-reveal>
+      <p class="section__eyebrow">Services</p>
+      <h2 class="section__title">Enterprise expertise.<br>AI-powered delivery.</h2>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card" data-reveal>
+        <div class="service-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3 class="service-card__title">Solution Architecture</h3>
+        <p class="service-card__body">Great software starts with the right design. We define the architecture, data model, security boundaries, and integration points before any AI tool writes a single line — ensuring what gets built is actually right for your business.</p>
+      </div>
+
+      <div class="service-card" data-reveal data-delay="1">
+        <div class="service-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3 class="service-card__title">AI-Directed Development</h3>
+        <p class="service-card__body">We direct Claude Code, Cursor, and GitHub Copilot to implement your solution at speed. Our role is quality control: every output is reviewed against enterprise standards before it moves forward.</p>
+      </div>
+
+      <div class="service-card" data-reveal data-delay="2">
+        <div class="service-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 class="service-card__title">Security &amp; Compliance</h3>
+        <p class="service-card__body">AI doesn't inherently know your compliance requirements. We do. Whether it's SOC 2, HIPAA, PCI-DSS, or FedRAMP, we bake security and compliance into the build from day one — not as an afterthought.</p>
+      </div>
+
+      <div class="service-card" data-reveal>
+        <div class="service-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <h3 class="service-card__title">Legacy Modernization</h3>
+        <p class="service-card__body">We've seen it all — COBOL to Classic ASP to .NET Framework 2.0. We bring legacy systems forward in a phased, risk-managed way: preserving critical business logic while rebuilding on a modern, AI-friendly foundation.</p>
+      </div>
+
+      <div class="service-card" data-reveal data-delay="1">
+        <div class="service-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3 class="service-card__title">Scalability &amp; Performance</h3>
+        <p class="service-card__body">AI tools build what you tell them to build. Without enterprise experience in the room, they'll build something that works today but crumbles under load tomorrow. We design for scale from the start.</p>
+      </div>
+
+      <div class="service-card" data-reveal data-delay="2">
+        <div class="service-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="service-card__title">Technical Leadership</h3>
+        <p class="service-card__body">Need senior engineering judgment without the full-time hire? We embed as your technical leaders — owning architecture decisions, guiding your team, and ensuring AI-built features meet the bar enterprise software demands.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════ -->
+<section class="section section--surface" id="testimonials">
+  <div class="container container--default">
+    <div class="text-center gap-section" data-reveal>
+      <p class="section__eyebrow">Client Voices</p>
+      <h2 class="section__title">Trusted by teams who build<br>serious software.</h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card" data-reveal>
+        <p class="testimonial-card__quote">Stature has been our development partner since 2005. Their capabilities span the full spectrum — Windows, Android, iOS, Linux, HTML5, communications, encryption, messaging, AI, machine learning, streaming, GIS/mapping, and API/SDK development. We've never needed to look elsewhere.</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">MH</div>
+          <div>
+            <div class="testimonial-card__name">Michael Helfrich</div>
+            <div class="testimonial-card__role">President &amp; CEO, CONFIDENTIAL</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-reveal data-delay="1">
+        <p class="testimonial-card__quote">Our requirements are complex and constantly evolving. The Stature team handles it with stability and confidence — nothing is ever too difficult. The reliability they bring is something you just can't put a price on.</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">OL</div>
+          <div>
+            <div class="testimonial-card__name">Oliver L.</div>
+            <div class="testimonial-card__role">Technology Director</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     WHY NOW — AI INFLECTION POINT
+════════════════════════════════════════ -->
+<section class="section section--dark" id="why-now">
+  <div class="container container--default">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-16); align-items:center;">
+      <div data-reveal>
+        <p class="section__eyebrow" style="color:#3fa8b0;">Why Stature</p>
+        <h2 class="section__title" style="color:#e0ecea; font-size:var(--text-2xl);">AI alone doesn't know what<br>enterprise software requires.</h2>
+        <p style="color:rgba(224,236,234,0.65); font-size:var(--text-base); line-height:1.7; margin-top:var(--space-5); max-width:52ch;">
+          Cursor and Claude Code can write thousands of lines in minutes. But they don't know your compliance requirements, your failure modes, your data integrity rules, or the security boundaries your auditors care about.
+        </p>
+        <p style="color:rgba(224,236,234,0.65); font-size:var(--text-base); line-height:1.7; margin-top:var(--space-4); max-width:52ch;">
+          That knowledge takes decades to earn. We have it. Our job is to direct AI tools with the judgment they don't have — so what ships is fast <em style="color:#3fa8b0;">and</em> right.
+        </p>
+        <a href="contact.html" class="btn btn--primary btn--lg" style="margin-top:var(--space-8);">Start a Conversation</a>
+      </div>
+      <div data-reveal data-delay="2">
+        <!-- Visual: before/after split -->
+        <div style="display:flex; flex-direction:column; gap:var(--space-4);">
+          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius-xl); padding:var(--space-6);">
+            <div style="font-size:var(--text-xs); font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#e05a5a; margin-bottom:var(--space-3);">AI Without Enterprise Expertise</div>
+            <div style="display:flex; flex-direction:column; gap:var(--space-3);">
+              <div style="display:flex; align-items:center; gap:var(--space-3); color:rgba(224,236,234,0.5); font-size:var(--text-sm);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e05a5a" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+                Ships fast, but fails security review
+              </div>
+              <div style="display:flex; align-items:center; gap:var(--space-3); color:rgba(224,236,234,0.5); font-size:var(--text-sm);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e05a5a" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+                Architecture breaks down under real load
+              </div>
+              <div style="display:flex; align-items:center; gap:var(--space-3); color:rgba(224,236,234,0.5); font-size:var(--text-sm);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e05a5a" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+                Compliance gaps found late — after launch
+              </div>
+              <div style="display:flex; align-items:center; gap:var(--space-3); color:rgba(224,236,234,0.5); font-size:var(--text-sm);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e05a5a" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+                Technical debt accumulates from day one
+              </div>
+            </div>
+          </div>
+          <div style="background:rgba(63,168,176,0.08); border:1px solid rgba(63,168,176,0.2); border-radius:var(--radius-xl); padding:var(--space-6);">
+            <div style="font-size:var(--text-xs); font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#3fa8b0; margin-bottom:var(--space-3);">AI Directed by Stature</div>
+            <div style="display:flex; flex-direction:column; gap:var(--space-3);">
+              <div style="display:flex; align-items:center; gap:var(--space-3); color:rgba(224,236,234,0.75); font-size:var(--text-sm);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3fa8b0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Ships fast and passes security review
+              </div>
+              <div style="display:flex; align-items:center; gap:var(--space-3); color:rgba(224,236,234,0.75); font-size:var(--text-sm);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3fa8b0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Architecture designed to scale from day one
+              </div>
+              <div style="display:flex; align-items:center; gap:var(--space-3); color:rgba(224,236,234,0.75); font-size:var(--text-sm);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3fa8b0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Compliance baked in, not bolted on
+              </div>
+              <div style="display:flex; align-items:center; gap:var(--space-3); color:rgba(224,236,234,0.75); font-size:var(--text-sm);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3fa8b0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Built to last, not just built to demo
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     CTA BAND
+════════════════════════════════════════ -->
+<section class="cta-band">
+  <div class="container container--narrow">
+    <p class="cta-band__eyebrow">Ready to start?</p>
+    <h2 class="cta-band__title">Enterprise software, built at AI speed.</h2>
+    <p class="cta-band__subtitle">Tell us about your project — what you're building, what's at stake, and what timeline you're working toward. We'll tell you honestly what it takes to do it right.</p>
+    <div style="display:flex; justify-content:center; gap:var(--space-4); flex-wrap:wrap;">
+      <a href="contact.html" class="btn btn--white btn--lg">Start a Conversation</a>
+      <a href="case-studies.html" class="btn btn--white-outline btn--lg">Read Case Studies</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" aria-label="Stature Software home">
+          <svg width="148" height="34" viewBox="0 0 172 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes star-blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .star-blink { animation: star-blink 1.1s step-end infinite; }
+    </style>
+  </defs>
+  <rect x="0" y="2" width="36" height="36" rx="8" fill="var(--color-primary)"/>
+  <path d="M8 16 L13 20 L8 24" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="16" y="27" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="white">s</text>
+  <path class="star-blink" d="M29 17 L30 20 L33 20.6 L30 21.2 L29 24.2 L28 21.2 L25 20.6 L28 20 Z" fill="white"/>
+  <text x="46" y="25" font-family="Cabinet Grotesk, Helvetica Neue, sans-serif" font-size="18" font-weight="900" letter-spacing="2" fill="var(--color-text)">STATURE</text>
+  <text x="47" y="35" font-family="Cabinet Grotesk, Helvetica Neue, sans-serif" font-size="8" font-weight="500" letter-spacing="2.8" fill="var(--color-text-muted)">SOFTWARE</text>
+</svg>
+        </a>
+        <p class="footer__brand-desc">30 years of enterprise software expertise, directing today's best AI tools to build fast, secure, scalable solutions. We know what it takes — AI delivers it.</p>
+      </div>
+      <div>
+        <p class="footer__col-title">Services</p>
+        <ul class="footer__links">
+          <li><a href="index.html#services">Solution Architecture</a></li>
+          <li><a href="index.html#services">AI-Directed Development</a></li>
+          <li><a href="index.html#services">Security &amp; Compliance</a></li>
+          <li><a href="index.html#services">Legacy Modernization</a></li>
+          <li><a href="index.html#services">Technical Leadership</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Company</p>
+        <ul class="footer__links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Contact</p>
+        <ul class="footer__links">
+          <li><a href="mailto:hello@staturesoftware.com">hello@staturesoftware.com</a></li>
+          <li><a href="contact.html">Book a Call</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Stature Software. All rights reserved.</p>
+      <p class="footer__copy footer__cookie">By using this site you agree to our <a href="#" onclick="return false;">Privacy Policy</a> and <a href="#" onclick="return false;">Cookie Policy</a>. We use essential cookies only.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

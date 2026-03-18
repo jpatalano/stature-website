@@ -1,0 +1,5 @@
+/* Scroll reveal — content visible always, animates when JS runs */
+[data-reveal] {
+  opacity: 1;
+  transform: none;
+}

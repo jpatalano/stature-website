@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies — Stature Software</title>
+  <meta name="description" content="Real migration stories — how Stature standardized legacy codebases and turned AI from a frustration into a force multiplier.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reveal.css">
+  <script>
+    (function(){
+      var t =
+        (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Stature Software home">
+          <svg width="172" height="40" viewBox="0 0 172 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Stature Software">
+  <defs>
+    <style>
+      @keyframes star-blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .star-blink { animation: star-blink 1.1s step-end infinite; }
+    </style>
+  </defs>
+  <rect x="0" y="2" width="36" height="36" rx="8" fill="var(--color-primary)"/>
+  <path d="M8 16 L13 20 L8 24" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="16" y="27" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="white">s</text>
+  <path class="star-blink" d="M29 17 L30 20 L33 20.6 L30 21.2 L29 24.2 L28 21.2 L25 20.6 L28 20 Z" fill="white"/>
+  <text x="46" y="25" font-family="Cabinet Grotesk, Helvetica Neue, sans-serif" font-size="18" font-weight="900" letter-spacing="2" fill="var(--color-text)">STATURE</text>
+  <text x="47" y="35" font-family="Cabinet Grotesk, Helvetica Neue, sans-serif" font-size="8" font-weight="500" letter-spacing="2.8" fill="var(--color-text-muted)">SOFTWARE</text>
+</svg>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="case-studies.html" class="active">Case Studies</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav__actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode"></button>
+        <a href="contact.html" class="nav__cta">Start a Conversation</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn--primary" style="width:fit-content">Start a Conversation</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container container--default">
+    <div data-reveal>
+      <p class="section__eyebrow">Case Studies</p>
+      <h1 class="section__title" style="font-size:var(--text-2xl);">How teams unlocked AI on codebases<br>they've been building for years.</h1>
+      <p class="section__subtitle">These aren't toy examples. These are real production systems, real teams, and the honest story of what it took to get AI working reliably on them.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="section">
+  <div class="container container--default">
+
+    <!-- Case Study 1 -->
+    <div class="case-study-card" data-reveal>
+      <div class="case-study-card__visual">
+        <!-- Abstract visual: stacked code layers -->
+        <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="30" width="140" height="24" rx="6" fill="rgba(63,168,176,0.15)" stroke="rgba(63,168,176,0.3)" stroke-width="1"/>
+          <rect x="28" y="38" width="60" height="8" rx="4" fill="rgba(63,168,176,0.5)"/>
+          <rect x="96" y="38" width="36" height="8" rx="4" fill="rgba(63,168,176,0.25)"/>
+
+          <rect x="20" y="66" width="140" height="24" rx="6" fill="rgba(63,168,176,0.10)" stroke="rgba(63,168,176,0.2)" stroke-width="1"/>
+          <rect x="28" y="74" width="44" height="8" rx="4" fill="rgba(255,255,255,0.2)"/>
+          <rect x="80" y="74" width="52" height="8" rx="4" fill="rgba(255,255,255,0.1)"/>
+
+          <rect x="20" y="102" width="140" height="24" rx="6" fill="rgba(63,168,176,0.20)" stroke="rgba(63,168,176,0.4)" stroke-width="1"/>
+          <rect x="28" y="110" width="80" height="8" rx="4" fill="rgba(63,168,176,0.6)"/>
+
+          <!-- Arrow down -->
+          <path d="M90 136 L90 152 M84 146 L90 152 L96 146" stroke="rgba(63,168,176,0.6)" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="90" cy="162" r="8" fill="rgba(63,168,176,0.3)" stroke="rgba(63,168,176,0.6)" stroke-width="1.5"/>
+          <path d="M86 162 L89 165 L94 159" stroke="rgba(63,168,176,0.9)" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="case-study-card__content">
+        <span class="case-study-card__tag">Defense &amp; Security · Node.js + React · 18 Years of Code</span>
+        <h2 class="case-study-card__title">CONFIDENTIAL: 18 Years of Mission-Critical Code Made AI-Ready</h2>
+        <p class="case-study-card__summary">A defense &amp; security client had accumulated nearly two decades of production code across Windows, Android, iOS, and Linux platforms. The codebase was battle-tested but sprawling — inconsistent naming, undocumented business logic, and zero AI tooling. As part of the engagement, Stature migrated the full stack from .NET/C# to Node.js and React, and moved infrastructure to a modern cloud hosting model — reducing hosting costs by 1,200%. Stature then spent 10 weeks standardizing 340,000 lines of code, writing inline documentation, normalizing patterns, and configuring a domain-tuned Cursor workspace. Their dev team now ships features with AI assistance that previously required three developers and two weeks.</p>
+        <div class="case-study-card__results">
+          <div class="result-stat">
+            <div class="result-stat__num">3×</div>
+            <div class="result-stat__label">Faster feature delivery</div>
+          </div>
+          <div class="result-stat">
+            <div class="result-stat__num">340K</div>
+            <div class="result-stat__label">Lines standardized</div>
+          </div>
+          <div class="result-stat">
+            <div class="result-stat__num">10 wks</div>
+            <div class="result-stat__label">To AI-ready</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case Study 2 -->
+    <div class="case-study-card" data-reveal>
+      <div class="case-study-card__visual">
+        <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Mobile device outline -->
+          <rect x="60" y="20" width="60" height="104" rx="10" stroke="rgba(63,168,176,0.4)" stroke-width="1.5" fill="rgba(63,168,176,0.05)"/>
+          <rect x="68" y="32" width="44" height="60" rx="4" fill="rgba(63,168,176,0.12)"/>
+          <!-- Screen content lines -->
+          <rect x="72" y="38" width="30" height="5" rx="2.5" fill="rgba(63,168,176,0.5)"/>
+          <rect x="72" y="47" width="20" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
+          <rect x="72" y="55" width="36" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+          <rect x="72" y="63" width="24" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+          <!-- Home indicator -->
+          <rect x="80" y="110" width="20" height="3" rx="1.5" fill="rgba(255,255,255,0.2)"/>
+          <!-- AI spark -->
+          <circle cx="130" cy="50" r="18" fill="rgba(63,168,176,0.1)" stroke="rgba(63,168,176,0.3)" stroke-width="1"/>
+          <path d="M130 42 L132 48 L138 50 L132 52 L130 58 L128 52 L122 50 L128 48 Z" fill="rgba(63,168,176,0.7)"/>
+          <path d="M122 40 L123 43 L126 44 L123 45 L122 48 L121 45 L118 44 L121 43 Z" fill="rgba(63,168,176,0.4)"/>
+        </svg>
+      </div>
+      <div class="case-study-card__content">
+        <span class="case-study-card__tag">Enterprise Mobile · iOS &amp; Android · Mixed-Era Codebase</span>
+        <h2 class="case-study-card__title">Complex Mobile Platform: AI Copilot in a Multi-Platform Nightmare</h2>
+        <p class="case-study-card__summary">A technology director came to Stature with a fragmented mobile codebase — Objective-C mixed with Swift, Java alongside Kotlin, and a shared business logic layer that had been copy-pasted between platforms for years. AI tools were producing dangerous hallucinations because the code gave no consistent signal. Stature ran a 6-week consolidation: unified patterns, cross-platform documentation, shared contract definitions, and a custom Claude project context. The team now uses AI to extend features across both platforms simultaneously — what used to require separate iOS and Android specialists.</p>
+        <div class="case-study-card__results">
+          <div class="result-stat">
+            <div class="result-stat__num">2→1</div>
+            <div class="result-stat__label">Platforms, one AI workflow</div>
+          </div>
+          <div class="result-stat">
+            <div class="result-stat__num">6 wks</div>
+            <div class="result-stat__label">To unified standard</div>
+          </div>
+          <div class="result-stat">
+            <div class="result-stat__num">60%</div>
+            <div class="result-stat__label">Dev time saved</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case Study 3 -->
+    <div class="case-study-card" data-reveal>
+      <div class="case-study-card__visual">
+        <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Database cylinders -->
+          <ellipse cx="90" cy="42" rx="36" ry="10" stroke="rgba(63,168,176,0.5)" stroke-width="1.5" fill="rgba(63,168,176,0.1)"/>
+          <rect x="54" y="42" width="72" height="32" fill="rgba(63,168,176,0.07)" stroke="rgba(63,168,176,0.2)" stroke-width="0"/>
+          <line x1="54" y1="54" x2="126" y2="54" stroke="rgba(63,168,176,0.2)" stroke-width="1"/>
+          <line x1="54" y1="64" x2="126" y2="64" stroke="rgba(63,168,176,0.15)" stroke-width="1"/>
+          <ellipse cx="90" cy="74" rx="36" ry="10" stroke="rgba(63,168,176,0.4)" stroke-width="1.5" fill="rgba(63,168,176,0.08)"/>
+          <!-- Arrow down to new -->
+          <path d="M90 88 L90 102" stroke="rgba(63,168,176,0.5)" stroke-width="2" stroke-dasharray="4 3"/>
+          <ellipse cx="90" cy="116" rx="36" ry="10" stroke="rgba(63,168,176,0.7)" stroke-width="1.5" fill="rgba(63,168,176,0.2)"/>
+          <rect x="54" y="116" width="72" height="28" fill="rgba(63,168,176,0.1)"/>
+          <ellipse cx="90" cy="144" rx="36" ry="10" stroke="rgba(63,168,176,0.7)" stroke-width="1.5" fill="rgba(63,168,176,0.2)"/>
+          <!-- Spark on new db -->
+          <path d="M90 108 L92 113 L97 115 L92 117 L90 122 L88 117 L83 115 L88 113 Z" fill="rgba(255,255,255,0.6)"/>
+        </svg>
+      </div>
+      <div class="case-study-card__content">
+        <span class="case-study-card__tag">SaaS Platform · Node.js + PostgreSQL · Rapid Growth Tech Debt</span>
+        <h2 class="case-study-card__title">Growth-Stage SaaS: Taming Five Years of Move-Fast Code</h2>
+        <p class="case-study-card__summary">A B2B SaaS company had grown fast — too fast for their codebase to keep up. Five years of startup velocity left them with inconsistent API patterns, undocumented database schemas, and a Node.js backend that Copilot actively made worse. New developers were spending their first month just mapping the system. Stature ran a documentation-first pass: auto-generated schema docs, API contract standardization, and a structured onboarding context for AI tools. New developers now reach full productivity in a week. AI-assisted feature work is reliable enough that the team ships two-week sprints in three days.</p>
+        <div class="case-study-card__results">
+          <div class="result-stat">
+            <div class="result-stat__num">1 wk</div>
+            <div class="result-stat__label">New dev onboarding (was 1 mo)</div>
+          </div>
+          <div class="result-stat">
+            <div class="result-stat__num">4×</div>
+            <div class="result-stat__label">Sprint velocity</div>
+          </div>
+          <div class="result-stat">
+            <div class="result-stat__num">100%</div>
+            <div class="result-stat__label">AI suggestions trustworthy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container container--narrow">
+    <p class="cta-band__eyebrow">Your project is next</p>
+    <h2 class="cta-band__title">What does your codebase need?</h2>
+    <p class="cta-band__subtitle">Every migration is different. Tell us about your stack, your team, and where AI is currently failing you. We'll put together a plan.</p>
+    <a href="contact.html" class="btn btn--white btn--lg">Start the Conversation</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" aria-label="Stature Software home">
+          <svg width="148" height="34" viewBox="0 0 172 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes star-blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .star-blink { animation: star-blink 1.1s step-end infinite; }
+    </style>
+  </defs>
+  <rect x="0" y="2" width="36" height="36" rx="8" fill="var(--color-primary)"/>
+  <path d="M8 16 L13 20 L8 24" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="16" y="27" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="white">s</text>
+  <path class="star-blink" d="M29 17 L30 20 L33 20.6 L30 21.2 L29 24.2 L28 21.2 L25 20.6 L28 20 Z" fill="white"/>
+  <text x="46" y="25" font-family="Cabinet Grotesk, Helvetica Neue, sans-serif" font-size="18" font-weight="900" letter-spacing="2" fill="var(--color-text)">STATURE</text>
+  <text x="47" y="35" font-family="Cabinet Grotesk, Helvetica Neue, sans-serif" font-size="8" font-weight="500" letter-spacing="2.8" fill="var(--color-text-muted)">SOFTWARE</text>
+</svg>
+        </a>
+        <p class="footer__brand-desc">AI-ready codebase migration for teams who've been building real software for years.</p>
+      </div>
+      <div>
+        <p class="footer__col-title">Services</p>
+        <ul class="footer__links">
+          <li><a href="index.html#services">Standardization</a></li>
+          <li><a href="index.html#services">AI Toolchain Setup</a></li>
+          <li><a href="index.html#services">Team Coaching</a></li>
+          <li><a href="index.html#services">Legacy Migration</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Company</p>
+        <ul class="footer__links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Contact</p>
+        <ul class="footer__links">
+          <li><a href="mailto:hello@staturesoftware.com">hello@staturesoftware.com</a></li>
+          <li><a href="contact.html">Book a Call</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Stature Software. All rights reserved.</p>
+      <p class="footer__copy footer__cookie">By using this site you agree to our <a href="#" onclick="return false;">Privacy Policy</a> and <a href="#" onclick="return false;">Cookie Policy</a>. We use essential cookies only.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
